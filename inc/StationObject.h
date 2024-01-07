@@ -2,6 +2,6 @@
 #include <string>
 
 struct StationObject {
-    uint32_t frequency;
+    u_int32_t frequency;
     std::string psName;
 } ;

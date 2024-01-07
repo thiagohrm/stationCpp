@@ -14,7 +14,7 @@ void Station::stop(){
 
 }
 
-void Station::makeStation(uint32_t freq, std::string psName){
+void Station::makeStation(u_int32_t freq, std::string psName){
     std::cout << "making a station, freq :" << freq << " psName: " << psName << std::endl ;
     mStations.push_back({freq, psName});
 }

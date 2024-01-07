@@ -11,7 +11,7 @@ public IStartStop
 {
     public:
     //IStation
-    void makeStation(uint32_t freq, std::string psName) override;
+    void makeStation(u_int32_t freq, std::string psName) override;
 
     //IStartStop
     bool start() override;
