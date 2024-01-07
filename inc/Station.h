@@ -4,6 +4,7 @@
 #include "IStartStop.h"
 #include "StationObject.h"
 #include <vector>
+#include <cstdint>
 
 class Station : 
 public IStation,
@@ -11,7 +12,7 @@ public IStartStop
 {
     public:
     //IStation
-    void makeStation(u_int32_t freq, std::string psName) override;
+    void makeStation(uint32_t freq, std::string psName) override;
 
     //IStartStop
     bool start() override;
