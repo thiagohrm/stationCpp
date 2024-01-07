@@ -1,15 +1,26 @@
 #pragma once
 
 #include "IStation.h"
+#include "IStartStop.h"
+#include "StationObject.h"
+#include <vector>
+#include <cstdint>
 
-class Station : public IStation 
+class Station : 
+public IStation,
+public IStartStop
 {
     public:
-    std::string getTest() override;
+    //IStation
+    void makeStation(uint32_t freq, std::string psName) override;
+
+    //IStartStop
+    bool start() override;
+    void stop() override;
+
 
     private:
-    std::string test = "OLA MUNDO";
-
+    std::vector<StationObject> mStations;
 };
 
 
