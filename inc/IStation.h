@@ -6,5 +6,6 @@ class IStation
 {
     public:
     virtual ~IStation() = default;
-    virtual std::string getTest() = 0;
+    virtual void makeStation(uint32_t freq, std::string psName) = 0;
+
 };
