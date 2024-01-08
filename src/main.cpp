@@ -1,5 +1,5 @@
 
-#include "Station.h"
+#include "StationManager.h"
 #include <iostream>
 #include <memory>
 #include <vector>
@@ -7,9 +7,9 @@
 
 int main(){
     
-    auto pStation = std::make_shared<Station>();
+    auto pStationManager = std::make_shared<StationManager>();
     std::vector<std::shared_ptr<IStartStop>> pointers;
-    pointers.push_back(pStation);
+    pointers.push_back(pStationManager);
 
     for (auto serviceIt = pointers.begin(); serviceIt != pointers.end(); ++serviceIt) {
         serviceIt->get()->start();

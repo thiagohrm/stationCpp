@@ -1,9 +1,9 @@
 
-#include "Station.h"
+#include "StationManager.h"
 #include <iostream>
 #include <cstdint>
 
-bool Station::start(){
+bool StationManager::start(){
     makeStation(94400,"ANTENA 1");
     makeStation(95500,"ANTENA 2");
     makeStation(96600,"ANTENA 3");
@@ -11,11 +11,11 @@ bool Station::start(){
     return true;
 }
 
-void Station::stop(){
+void StationManager::stop(){
 
 }
 
-void Station::makeStation(uint32_t freq, std::string psName){
+void StationManager::makeStation(uint32_t freq, std::string psName){
     std::cout << "making a station, freq :" << freq << " psName: " << psName << std::endl ;
     mStations.push_back({freq, psName});
 }
