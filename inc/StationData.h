@@ -1,7 +1,7 @@
 #include <cstdint>
 #include <string>
 
-struct StationObject {
+struct StationData {
     uint32_t frequency;
     std::string psName;
 } ;

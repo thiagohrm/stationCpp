@@ -2,11 +2,11 @@
 
 #include "IStation.h"
 #include "IStartStop.h"
-#include "StationObject.h"
+#include "StationData.h"
 #include <vector>
 #include <cstdint>
 
-class Station : 
+class StationManager : 
 public IStation,
 public IStartStop
 {
@@ -20,7 +20,7 @@ public IStartStop
 
 
     private:
-    std::vector<StationObject> mStations;
+    std::vector<StationData> mStations;
 };
 
 
